@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100vw;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100%;
+
+    background: linear-gradient(184deg, rgba(94,89,85,0.9) 0%, rgba(94,89,85,0.8) 100%), url(img/Fenix\ .png);
+    background-repeat: no-repeat;
+
+    background-position: 58% 60%;
+}
+
+header {
+    height: 730px;
+}
+
+header img {
+    width: 300px;
+}
+
+header .grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: "Montserrat";
+    font-size: 23px;
+
+    color: white;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+}
+
+.grid-conteudo {
+    height: calc(100px - 280px);
+
+    display: flex;
+    align-items: center;
+}
+
+.grid-conteudo h1 {
+    color: white;
+    
+    font-family: "bungee";
+    font-size: 32px;
+}
+
+.grid-conteudo p {
+    color: white;
+
+    font-family: "Montserrat";
+    font-size: 20px;
+}
