@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-.grid {
+.container-grid {
     width: 100vw;
     max-width: 1280px;
 
@@ -19,21 +19,22 @@
 .banner {
     height: 100%;
 
-    background: linear-gradient(184deg, rgba(94,89,85,0.9) 0%, rgba(94,89,85,0.8) 100%), url(img/Fenix\ .png);
+    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/Fenix\ .png);
     background-repeat: no-repeat;
 
-    background-position: 58% 60%;
+    background-position: 55% 60%;
 }
 
 header {
-    height: 730px;
+    height: 250px;
 }
 
 header img {
     width: 300px;
+    margin: 20px;
 }
 
-header .grid {
+header .container-grid {
     height: 100%;
 
     display: flex;
@@ -46,11 +47,16 @@ header .grid {
 
     display: flex;
     justify-content: space-between;
+
+    margin: 42px;
+
+
 }
 
 .menu a {
     font-family: "Montserrat";
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: bold;
 
     color: white;
 
@@ -63,23 +69,83 @@ header .grid {
     text-decoration-color: white;
 }
 
-.grid-conteudo {
-    height: calc(100px - 280px);
+.conteudo-banner {
+    height: calc(100vh - 250px);
+}
+
+.conteudo-banner h1 {
+
+    color: white;
+
+    font-family: "Bungee";
+    font-size: 40px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.conteudo-banner p {
+    margin-top: 70px;
 
     display: flex;
     align-items: center;
-}
 
-.grid-conteudo h1 {
-    color: white;
-    
-    font-family: "bungee";
-    font-size: 32px;
-}
-
-.grid-conteudo p {
     color: white;
 
     font-family: "Montserrat";
     font-size: 20px;
 }
+
+section {
+    background-color: #c8c8c8;
+}
+
+#sobre {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 100px;
+}
+
+#sobre #banner1 {
+    width: 500px;
+
+    display: flex;
+    justify-content: start;
+
+}
+
+#sobre #banner2 {
+    display: flex;
+    justify-content: end;
+
+    width: 500px;
+}
+
+#sobre h1 {
+    display: flex;
+    justify-content: center;
+
+
+    font-family: "Montserrat";
+    font-size: 26px;
+
+    
+
+}
+
+#sobre p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+
+
+    color: black;
+
+   margin: 30px;
+}
+
+
+    
