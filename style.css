@@ -9,11 +9,15 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #c8c8c8;
+}
+
 .container-grid {
     width: 100vw;
     max-width: 1280px;
 
-    margin: 0 auto;
+    margin: auto;
 }
 
 .banner {
@@ -60,12 +64,15 @@ header .container-grid {
     color: white;
 
     text-decoration: underline transparent;
-    text-decoration-thickness: 2px;
-    transition: text-decoration 500ms ease;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
 }
 
 .menu a:hover {
-    text-decoration-color: white;
+    text-decoration-color: #f27405;
+    color: #f27405;
+
 }
 
 .conteudo-banner {
@@ -76,7 +83,7 @@ header .container-grid {
 
     color: white;
 
-    font-family: "Bungee";
+    font-family: "Montserrat";
     font-size: 40px;
 
     display: block;
@@ -92,11 +99,8 @@ header .container-grid {
     color: white;
 
     font-family: "Montserrat";
-    font-size: 20px;
-}
-
-section#sobre {
-    background-color: #c8c8c8;
+    font-size: 22px;
+    font-weight: 500S;
 }
 
 #sobre {
@@ -127,7 +131,23 @@ section#sobre {
     margin-left: auto;
     margin-right: auto;
 
-    width: 400px;
+    width: 500px;
+}
+
+.text1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#image {
+    display: flex;
+    justify-content: left;
 }
 
 #sobre h1 {
@@ -154,8 +174,9 @@ section#sobre {
 
 #portifolio {
     height: 150px;
+    width: 100%;
 
-    background-image: url(img/thumb-1920-410661\ 1.png);
+    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/thumb-1920-410661\ 1.png);
     background-size: auto;
 
     position: relative;
@@ -166,18 +187,12 @@ section#sobre {
     width: 100%;
     height: 100%;
 
-    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%);
-
     position: absolute;
     top: 0;
     left: 0;
 
 }
 
-section#cases {
-    background-color: #d9d9d9;
-
-}
 #cases {
     text-align: center;
 
@@ -186,20 +201,25 @@ section#cases {
 
 .container-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 #cases h2 {
     margin-bottom: 100px;
     margin-top: 160px;
+    margin: 130px;
 
     font-family: "montserrat";
-    font-size: 25px;
+    font-size: 35px;
+
+    display: flex;
 }
 
 .card {
-    height: 400px;
-    width: 250px;
+    height: 500px;
+    width: 300px;
 
     display: flex;
     flex-direction: column;
@@ -212,7 +232,7 @@ section#cases {
 
     background-color: #d9d9d9;
 
-    border-radius: 18px;
+    border-radius: 25px;
 }
 
 .card img {
@@ -226,15 +246,34 @@ section#cases {
     color: black;
 
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 20px;
 
     text-align: left;
 
     padding: 15%;
 }
 
-.card img:hover {
-    
-} 
+#contato {
+    text-align: center;
 
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
 
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form{
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+    border-radius: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ccb400;
+}

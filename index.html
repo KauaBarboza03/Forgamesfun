@@ -23,26 +23,36 @@
                 <nav class="menu">
                     <a href="#Portifólio">Portifólio</a>
                     <a href="#Contate-nos">Contate-nos</a>
-                    <a href="#Mais sobre">Mais sobre</a>
-                    <a href="#Cases de sucesso">Cases de sucesso</a>
+                    <a href="#sobre">Mais sobre</a>
+                    <a href="#cases">Cases de sucesso</a>
                 </nav>
             </div>
         </header>
         <div class="container-grid conteudo-banner">
             <h1>Bem vindo!</h1>
             <p>Bem vindo ao site da ForgamesFun , esperemos que tenha uma boa experiência em no nosso site e com os
-                nossos serviços , que vocês (clientes) possam gostar dos nossos trabalhos e também possam compartilhar
+                nossos serviços , que vocês (clientes) possam gostar dos nossos Strabalhos e também possam compartilhar
                 com os amigos para que nossa empresa possa alcançar mais pessoas.</p>
         </div>
     </div>
-    <section id="sobre">
-        <img id="banner1" src="img/Banner 1.png" alt="O predio da nossa empresa">
 
-        <h1>Sobre a empresa</h1>
-        <p class="text1">Forgamesfun é uma empresa inovadora especializada na criação e implementação de soluções de
-            gamificação.
-            Nosso objetivo é transformar a maneira como as pessoas interagem com marcas, produtos e serviços, tornando
-            cada experiência mais envolvente, divertida e memorável.</p>
+    <section id="sobre">
+
+        <div class="text1">
+
+            <div class="image">
+                <img id="banner1" src="img/Banner 1.png" alt="O predio da nossa empresa">
+            </div>
+
+            <div class="sobre1">
+                <h1>Sobre a empresa</h1>
+                <p>Forgamesfun é uma empresa inovadora especializada na criação e implementação de soluções de
+                    gamificação.
+                    Nosso objetivo é transformar a maneira como as pessoas interagem com marcas, produtos e serviços,
+                    tornando
+                    cada experiência mais envolvente, divertida e memorável.</p>
+            </div>
+        </div>
         <p>Na ForgamesFun, nossa missão é levar a gamificação para o próximo nível, combinando tecnologia de ponta,
             psicologia do usuário e design criativo para criar experiências únicas e impactantes. Queremos inspirar a
             participação, promover a fidelidade do cliente e impulsionar o crescimento dos negócios por meio de
@@ -65,29 +75,55 @@
 
 
                 <div class="card">
-                    <img src="img/Case1.png" alt="">
+                    <img src="img/Case1.png" onmouseover="this.src='img/Case1.1.png'"
+                        onmouseleave="this.src='img/Case1.png'" alt="">
                     <p>Gamificações para diversas
                         escolas e institutos educativos.
                     </p>
                 </div>
                 <div class="card">
-                    <img src="img/Case2.png" alt="">
+                    <img src="img/Case2.png" onmouseover="this.src='img/Case2.2.png'"
+                        onmouseleave="this.src='img/Case2.png'" alt="">
                     <p>Gamificações para diversas
                         empresas corporativas e para S.As.
                     </p>
-                    
+
                 </div>
                 <div class="card">
-                    <img src="img/Case3.png" alt="">
+                    <img src="img/Case3.png" onmouseover="this.src='img/Case3.3.png'"
+                        onmouseleave="this.src='img/Case3.png'" alt="">
                     <p>Gamificações para diversas
                         empresas corporativas e para S.As.
 
                     </p>
-                    
                 </div>
 
-
             </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contate-nos</h2>
+
+            <form>
+
+                <div class="campo">
+                    <label for="campo-nome">Nome completo</label>
+                    <input id="campo-nome" placeholder="Digite o seu nome" type="text">
+                </div>
+                <div class="campo">
+                    <label for="campo-email">Email</label>
+                    <input id="campo-email" placeholder="Digite seu email" type="email">
+                <div class="campo">
+                    <label for="campo-tel">Número de celular ou empresarial</label>
+                    <input id="campo-tel" placeholder="Digite seu número" type="tel">
+                </div>
+                <div class="campo-descricao">
+                    <label for="campo-texto">Relate o problema</label>
+                    <textarea id="campo-texto" placeholder="Relate seu problema para nós" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
 </body>
