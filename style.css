@@ -77,6 +77,8 @@ header .container-grid {
 
 .conteudo-banner {
     height: calc(120vh - 280px);
+
+    width: 1200px;
 }
 
 .conteudo-banner h1 {
@@ -372,19 +374,32 @@ header .container-grid {
     font-family: "Montserrat";
     font-weight: 700;
 
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.checkbox {
+    font-family: "Montserrat";
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.checkbox p {
+    color: #f27405;
 }
 
 .botao {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 400px;
+    gap: 300px;
 
 }
 
 footer {
     height: 230px;
-    background-repeat: no-repeat;
 
     background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/thumb-1920-410661\ 1.png);
 }
@@ -397,6 +412,9 @@ footer .container-grid {
 .redes-sociais {
     height: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .redes-sociais p {
@@ -404,6 +422,12 @@ footer .container-grid {
     font-family: "Montserrat";
     font-size: 20px;
     font-weight: bold;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+    
 }
 
 .icones-redes {
@@ -414,20 +438,85 @@ footer .container-grid {
     justify-items: center;
     align-items: center;
 
-    gap: 60px;
+    gap: 10px;
 
-    margin-left: 400px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+
 }
 
 .bloco {
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: 30px;
+
 }
 
 .icones-redes a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
 }
 
-.icones-redes a:hover {
-    color: rgb(255, 255, 255);
+.redes-sociais p:hover {
+    text-decoration-color:#f8953f;
+    
+    color: #f89137;
 }
+
+
+.icones-redes a:hover {
+    text-decoration-color:#f27405;
+    
+    color: #f27405;
+}
+
+.faq p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+
+    width: unset;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    footer .faq{
+        height: unset;
+        margin-right: 40px;
+    }
+
+    .container-grid.conteudo-banner {
+        width: 1000px;
+    }
+    
+}
+
+@media screen and (max-width: 1080px) {
+
+    .container-grid.conteudo-banner {
+        margin:30px ;
+        
+        width: 980px;
+    }
+    
+    .container-grid {
+        margin: 30px;
+    }
+    
+    .banner {
+        height:100%;
+        width: 100%;
+        background-position: 48% 60% ;
+        }
+    }
