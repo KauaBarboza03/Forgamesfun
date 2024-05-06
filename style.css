@@ -10,22 +10,20 @@
 }
 
 html {
-    width: 1600px;
-
     background-color: #c8c8c8;
     scroll-behavior: smooth;
 }
 
 .container-grid {
     width: 100vw;
-    max-width: 1280px;
+    max-width: 1400px;
 
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .banner {
-    height: 900px;
-    width: 1600px;
+    height: 100vh;
+    width: 100%;
 
     background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/Fenix\ .png);
     background-repeat: no-repeat;
@@ -38,11 +36,11 @@ header button {
 }
 
 header {
-    height: 250px;
+    height: 300px;
 }
 
 header img {
-    width: 300px;
+    width: 250px;
     margin: 20px;
 }
 
@@ -60,7 +58,7 @@ header .container-grid {
     display: flex;
     justify-content: space-between;
 
-    margin: 42px;
+    margin-top: 40px;
 
 }
 
@@ -84,9 +82,7 @@ header .container-grid {
 }
 
 .conteudo-banner {
-    height: calc(120vh - 280px);
-
-    width: 1200px;
+    height: calc(100vh - 280px);
 }
 
 .conteudo-banner h1 {
@@ -109,8 +105,8 @@ header .container-grid {
     color: white;
 
     font-family: "Montserrat";
-    font-size: 22px;
-    font-weight: 500S;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #sobre {
@@ -168,7 +164,7 @@ header .container-grid {
     font-family: "Montserrat";
     font-size: 26px;
 
-    margin: 13px;
+    margin: 15px;
 }
 
 #sobre p {
@@ -186,7 +182,7 @@ header .container-grid {
     height: 150px;
     width: 100%;
 
-    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/thumb-1920-410661\ 1.png);
+    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/filter.png);
     background-size: auto;
 
     position: relative;
@@ -396,6 +392,7 @@ header .container-grid {
 
 .checkbox p {
     color: #f27405;
+    outline: none;
 }
 
 .botao {
@@ -403,13 +400,13 @@ header .container-grid {
     flex-direction: row;
     justify-content: space-between;
     gap: 300px;
-
 }
 
 footer {
     height: 230px;
 
-    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/thumb-1920-410661\ 1.png);
+    background: linear-gradient(184deg, rgba(94, 89, 85, 0.9) 0%, rgba(94, 89, 85, 0.8) 100%), url(img/filter.png);
+
 }
 
 footer .container-grid {
@@ -423,6 +420,7 @@ footer .container-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .redes-sociais p {
@@ -492,64 +490,6 @@ footer .container-grid {
     width: unset;
     cursor: pointer;
 
-}
-
-@media screen and (max-width: 1600px) {
-
-    footer .faq {
-        height: unset;
-        margin-right: 100px;
-    }
-
-
-    .container-grid.conteudo-banner {
-        margin: 70px;
-
-        width: 1800px;
-    }
-
-    .banner {
-        height: 900px;
-        width: 1600px;
-        background-position: 50% 60%;
-
-        top: 0;
-    }
-
-    .menu {
-        margin-right: 100px;
-    }
-
-    .filter {
-        width: 1600px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .menu {
-        margin-left: 100px;
-    }
-
-    nav.menu {
-        height: 500px;
-        width: 350px;
-
-        padding: 0px 30px;
-
-        flex-direction: column;
-        justify-content: space-around;
-
-        background-color: #f89137;
-
-        position: absolute;
-        top: 200px;
-        right: -300px;
-
-    }
-
-    .container-grid.conteudo-banner {
-        width: 1000px;
-    }
-
+    margin-right: 60px;
 
 }
