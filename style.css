@@ -437,7 +437,7 @@ footer .container-grid {
 }
 
 .icones-redes {
-    width: 400px;
+    width: 700px;
 
     display: flex;
     flex-wrap: wrap;
@@ -463,8 +463,6 @@ footer .container-grid {
     color: rgb(255, 255, 255);
 
     text-decoration: underline transparent;
-    text-decoration-thickness: 2px;
-
     transition: text-decoration 500ms ease;
 }
 
@@ -493,3 +491,32 @@ footer .container-grid {
     margin-right: 60px;
 
 }
+
+@media screen and (max-width: 1500px){
+    header {
+        position: relative;
+
+    }
+    .menu {
+        margin-right: 80px;
+    }
+
+    .container-grid.conteudo-banner{
+        width: 700px;
+    }
+    
+    .banner {
+        height: 80vh;
+        width: 1600px;
+    }
+
+    .conteudo-banner {
+        width: 1400px;
+    }
+    
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
