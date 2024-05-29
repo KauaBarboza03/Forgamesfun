@@ -491,14 +491,21 @@ footer .container-grid {
     width: unset;
     cursor: pointer;
 
-    margin-right: 60px;
+    margin-right: 30px;
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+    #tx2 {
+        font-size: 15px;
+    }
+    
+    header img {
+        width: 150px;
+    }
+    
     header button {
         width: 50px;
-        margin-right: 80px;
 
         display: unset;
 
@@ -523,13 +530,48 @@ footer .container-grid {
 
     }
 
-    .container-cards{
+    .container-cards p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    header button {
+        width: 30px;
+        margin-top: 20px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: white;
+    }
+
+    nav.menu {
+        width: 100px;
+        height: 200px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000da;
+
+    }
+
+    .container-cards .card{
         flex-wrap: wrap;
     }
 
     .card {
-        width: 40%;
-        height: 40%;
+        width: 70%;
+        height: 70%;
     }
 
     #cases h2 {
@@ -537,20 +579,18 @@ footer .container-grid {
     }
     .icones-redes {
         flex-wrap: wrap;
-       
-        margin: 0;
-    }
+       }
 
     .redes-sociais {
-        height: 60%;
+        height: 80%;
     }
 
-    .icones-redes p {
-        font-size: 15px;
+    .redes-sociais p {
+        font-size: 10px;
     }
 
     .faq p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
 }
@@ -562,8 +602,10 @@ footer .container-grid {
     }
 
     header button {
-        width: 50px;
-        margin-right: 80px;
+        width: 40px;
+        margin-top: 10px;
+       
+
 
         display: unset;
 
@@ -661,6 +703,11 @@ footer .container-grid {
     .redes-sociais {
         gap: 20px;
     }
+
+
+    .faq p {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -669,8 +716,8 @@ footer .container-grid {
     }
 
     header button {
-        width: 50px;
-        margin-right: 80px;
+        width: 40px;
+        margin-right: 0px;
 
         display: unset;
 
