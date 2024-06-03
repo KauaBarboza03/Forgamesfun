@@ -12,32 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 
-<body>
+<body onload="carregarCases()">
     <div class="banner">
         <header>
             <div class="container-grid">
                 <img src="img/Logo.png" alt="Logo da empresa">
-                <nav class="menu">
-                    <a href="https://www.figma.com/file/qBE2qXnpPuOUhgrENZqp3A/ForgamesFun?type=design&node-id=0-1&mode=design&t=htoMreBYdciUglQF-0">Portifólio</a>
+                <nav id="menu" class="menu">
+                    <a href="https://www.figma.com/design/qBE2qXnpPuOUhgrENZqp3A/ForgamesFun?node-id=0-1&t=jPIBqQXc62RcipiC-0">Portifólio</a>
                     <a href="#contato">Contate-nos</a>
                     <a href="#sobre">Mais sobre</a>
                     <a href="#cases">Cases de sucesso</a>
                 </nav>
-                <button>
+                <button onclick="abreFechaMenu()">
                     <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                     </svg>
-                    </button>
+                    <svg id="icone-x" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </button>
             </div>
         </header>
         <div class="container-grid conteudo-banner">
             <h1>Bem vindo!</h1>
-            <p id="tx2">Bem vindo ao site da ForgamesFun , esperemos que tenha uma boa experiência em no nosso site e com os
+            <p id="tx2">Bem vindo ao site da ForgamesFun , esperemos que tenha uma boa experiência em no nosso site e
+                com os
                 nossos serviços , que vocês (clientes) possam gostar dos nossos trabalhos e também possam compartilhar
                 com os amigos para que nossa empresa possa alcançar mais pessoas.</p>
         </div>
@@ -73,162 +80,136 @@
     <section id="portifolio">
         <div class="filter"></div>
         <div class="container-grid">
+    </section>
 
+    <section id="cases">
+        <h2>Cases de sucesso</h2>
+        <div class="container-cards">
+    </div>
+
+        
+    </section>
+
+    <section id="contato">
+
+        <form onsubmit="solicitarOrcamento()">
+            <h2>Contrate nossos serviços</h2>
+
+            <div class="campo">
+                <label for="campo-nome">Nome completo</label>
+                <input id="campo-nome" placeholder="Digite o seu nome" type="text">
+            </div>
+            <div class="campo">
+                <label for="campo-email">Email</label>
+                <input id="campo-email" placeholder="Digite seu email" type="email">
+            </div>
+            <div class="campo">
+                <label for="campo-tel">Número de telefone</label>
+                <input id="campo-tel" placeholder="Digite seu número" type="tel">
+            </div>
+            <div class="campo-descricao">
+                <label for="campo-texto">Relate o problema</label>
+                <textarea id="campo-texto" placeholder="Relate seu problema para nós" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="botao">
+                <div class="botao1">
+                    <button type="submit">Envie a mensagem</button>
+                </div>
+                <div class="botao2">
+                    <button type="reset">Limpar dados</button>
+                </div>
+            </div>
+
+
+
+            <div class="checkbox">
+                <form action="/action_page.php">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Eu aceito os <p>termos de serviço </p> </label><br>
+                </form>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="container-grid">
+            <div class="redes-sociais">
+
+                <div class="icones-redes">
+
+                    <div class="bloco">
+                        <a href="#">
+
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                    fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <p>@ForgamesFun</p>
+                        </a>
+                    </div>
+                    <div class="bloco">
+
+                        <a href="#">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <p>@ForgamesFun</p>
+                        </a>
+                    </div>
+                    <div class="bloco">
+
+                        <a href="#">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                                    fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <p>(353) 946-5456</p>
+                        </a>
+                    </div>
+
+                    <div class="bloco">
+
+                        <a href="#">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.3308 15.9402L15.6608 14.6101C15.8655 14.403 16.1092 14.2384 16.3778 14.1262C16.6465 14.014 16.9347 13.9563 17.2258 13.9563C17.517 13.9563 17.8052 14.014 18.0739 14.1262C18.3425 14.2384 18.5862 14.403 18.7908 14.6101L20.3508 16.1702C20.5579 16.3748 20.7224 16.6183 20.8346 16.887C20.9468 17.1556 21.0046 17.444 21.0046 17.7351C21.0046 18.0263 20.9468 18.3146 20.8346 18.5833C20.7224 18.8519 20.5579 19.0954 20.3508 19.3L19.6408 20.02C19.1516 20.514 18.5189 20.841 17.8329 20.9541C17.1469 21.0672 16.4427 20.9609 15.8208 20.6501C10.4691 17.8952 6.11008 13.5396 3.35083 8.19019C3.03976 7.56761 2.93414 6.86242 3.04914 6.17603C3.16414 5.48963 3.49384 4.85731 3.99085 4.37012L4.70081 3.65015C5.11674 3.23673 5.67937 3.00464 6.26581 3.00464C6.85225 3.00464 7.41488 3.23673 7.83081 3.65015L9.40082 5.22021C9.81424 5.63615 10.0463 6.19871 10.0463 6.78516C10.0463 7.3716 9.81424 7.93416 9.40082 8.3501L8.0708 9.68018C8.95021 10.8697 9.91617 11.9926 10.9608 13.04C11.9994 14.0804 13.116 15.04 14.3008 15.9102L14.3308 15.9402Z" />
+                            </svg>
+                            <p>(11) 94568-5456</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p>FAQs</p>
+                </div>
+
+            </div>
         </div>
 
-        <section id="cases">
-            <h2>Cases de sucesso</h2>
-            <div class="container-cards">
-
-
-                <div class="card">
-                    <img src="img/Case1.png" onmouseover="this.src='img/Case1.1.png'"
-                        onmouseleave="this.src='img/Case1.png'" alt="Crianças alegres">
-                    <p>Gamificações para diversas
-                        escolas e institutos educativos.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="img/Case2.png" onmouseover="this.src='img/Case2.2.png'"
-                        onmouseleave="this.src='img/Case2.png'" alt="Equipe empresarial feliz">
-                    <p>Gamificações para diversas
-                        empresas corporativas e para S.As.
-                    </p>
-
-                </div>
-                <div class="card">
-                    <img src="img/Case3.png" onmouseover="this.src='img/Case3.3.png'"
-                        onmouseleave="this.src='img/Case3.png'" alt="um homem e uma mulher feliz">
-                    <p>Gamificações para diversas
-                        empresas corporativas e para S.As.
-
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contato">
-
-            <form>
-                <h2>Contrate nossos serviços</h2>
-
-                <div class="campo">
-                    <label for="campo-nome">Nome completo</label>
-                    <input id="campo-nome" placeholder="Digite o seu nome" type="text">
-                </div>
-                <div class="campo">
-                    <label for="campo-email">Email</label>
-                    <input id="campo-email" placeholder="Digite seu email" type="email">
-                </div>
-                <div class="campo">
-                    <label for="campo-tel">Número de telefone</label>
-                    <input id="campo-tel" placeholder="Digite seu número" type="tel">
-                </div>
-                <div class="campo-descricao">
-                    <label for="campo-texto">Relate o problema</label>
-                    <textarea id="campo-texto" placeholder="Relate seu problema para nós" cols="30"
-                        rows="10"></textarea>
-                </div>
-
-                <div class="botao">
-                    <div class="botao1">
-                        <button type="submit">Envie a mensagem</button>
-                    </div>
-                    <div class="botao2">
-                        <button type="reset">Limpar dados</button>
-                    </div>
-                </div>
-
-
-
-                <div class="checkbox">
-                    <form action="/action_page.php">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1"> Eu aceito os <p>termos de serviço </p> </label><br>
-                    </form>
-                </div>
-
-            </form>
-        </section>
-
-        <footer>
-            <div class="container-grid">
-                <div class="redes-sociais">
-
-                    <div class="icones-redes">
-
-                        <div class="bloco">
-                            <a href="#">
-
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                                        fill="currentColor" />
-                                    <path
-                                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                                        fill="currentColor" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                                        fill="currentColor" />
-                                </svg>
-                                <p>@ForgamesFun</p>
-                            </a>
-                        </div>
-                        <div class="bloco">
-
-                            <a href="#">
-                                <?xml version="1.0" encoding="utf-8"?>
-                                <svg width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
-                                        fill="currentColor" />
-                                </svg>
-                                <p>@ForgamesFun</p>
-                            </a>
-                        </div>
-                        <div class="bloco">
-
-                            <a href="#">
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
-                                        fill="currentColor" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
-                                        fill="currentColor" />
-                                </svg>
-                                <p>(353) 946-5456</p>
-                            </a>
-                        </div>
-
-                        <div class="bloco">
-
-                            <a href="#">
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.3308 15.9402L15.6608 14.6101C15.8655 14.403 16.1092 14.2384 16.3778 14.1262C16.6465 14.014 16.9347 13.9563 17.2258 13.9563C17.517 13.9563 17.8052 14.014 18.0739 14.1262C18.3425 14.2384 18.5862 14.403 18.7908 14.6101L20.3508 16.1702C20.5579 16.3748 20.7224 16.6183 20.8346 16.887C20.9468 17.1556 21.0046 17.444 21.0046 17.7351C21.0046 18.0263 20.9468 18.3146 20.8346 18.5833C20.7224 18.8519 20.5579 19.0954 20.3508 19.3L19.6408 20.02C19.1516 20.514 18.5189 20.841 17.8329 20.9541C17.1469 21.0672 16.4427 20.9609 15.8208 20.6501C10.4691 17.8952 6.11008 13.5396 3.35083 8.19019C3.03976 7.56761 2.93414 6.86242 3.04914 6.17603C3.16414 5.48963 3.49384 4.85731 3.99085 4.37012L4.70081 3.65015C5.11674 3.23673 5.67937 3.00464 6.26581 3.00464C6.85225 3.00464 7.41488 3.23673 7.83081 3.65015L9.40082 5.22021C9.81424 5.63615 10.0463 6.19871 10.0463 6.78516C10.0463 7.3716 9.81424 7.93416 9.40082 8.3501L8.0708 9.68018C8.95021 10.8697 9.91617 11.9926 10.9608 13.04C11.9994 14.0804 13.116 15.04 14.3008 15.9102L14.3308 15.9402Z" />
-                                </svg>
-                                <p>(11) 94568-5456</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="faq">
-                        <p>FAQs</p>
-                    </div>
-
-                </div>
-            </div>
-
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 

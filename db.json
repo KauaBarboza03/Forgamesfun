@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "imagem": "https://unsplash.it/600/400?image=605",
+      "descricao": "Gamificações para diversas escolas e institutos educativos."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=495",
+      "descricao": "Gamificações para diversas empresas corporativas e para S.As."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=507",
+      "descricao": "Gamificações para diversas pessoas e clientes"
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": "",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "715d",
+      "nome": "Kauã Gabriel Ferreira Barboza",
+      "email": "kauabarboza29@gmail.com",
+      "descricao": "54r4f4f4f4f"
+    }
+  ]
+}
